@@ -1,89 +1,197 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="description" content="No MiKo No Life - Visual Novel Archive & Japanese Otaku Culture">
     <title>No MiKo No Life</title>
-
-    <style>
-        body {
-            font-family: Tahoma, sans-serif;
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-            background: #f5f5f5;
-            color: #333;
-        }
-
-        .banner {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        }
-
-        h1 {
-            margin-top: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            margin-top: 30px;
-            color: gray;
-            font-size: 14px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<body data-page="home">
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-icon" aria-hidden="true">⛩</span>
+            <span>
+                <strong>No MiKo No Life</strong>
+                <small>Visual Novel Archive &amp; Japanese Otaku Culture</small>
+            </span>
+        </a>
+        <nav class="main-nav" aria-label="เมนูหลัก">
+            <a class="active" href="index.html">Home</a>
+            <a href="archive.html">Catalog</a>
+            <a href="archive.html?category=Diary">Diary</a>
+            <a href="archive.html?category=Translation">Translate</a>
+            <a href="archive.html?category=Interview">Interview</a>
+            <a href="archive.html?category=History">History</a>
+            <a href="archive.html?category=Miko">Miko World</a>
+            <a href="about.html">About</a>
+        </nav>
+        <form class="search-box" role="search">
+            <span aria-hidden="true">⌕</span>
+            <input id="site-search" type="search" placeholder="Search...">
+            <button type="submit">Search</button>
+            <kbd>Ctrl K</kbd>
+        </form>
+    </header>
 
-<body>
+    <main class="page">
+        <section class="hero" aria-labelledby="hero-title">
+            <img src="img/miko.jpg" alt="No MiKo No Life hero banner">
+            <div class="hero-overlay"></div>
+            <div class="hero-copy">
+                <h1 id="hero-title">No MiKo No Life<span aria-hidden="true">*</span></h1>
+                <p class="jp-line">巫女のいない人生なんて、ありえない。</p>
+                <p>คลังข้อมูลเกี่ยวกับ Visual Novel, Galgame, นักวาด, ประวัติวงการ และวัฒนธรรมโอตาคุญี่ปุ่น</p>
+                <p class="archive-line">Archive • Research • Translation • Collection</p>
+            </div>
+        </section>
 
-    <img src="miko.jpg" alt="No MiKo No Life" class="banner">
-
-    <div class="card">
-        <h1>No MiKo No Life</h1>
-
-        <p>
-            บันทึกการเดินทางของมิโกะผู้เฝ้ามองโลกเกมญี่ปุ่น
-        </p>
-
-        <p>
-            รวมบทความ Visual Novel, Galgame,
-            ประวัติศาสตร์เกมญี่ปุ่น, การแปล,
-            และเรื่องเล่าจากโลกโอตาคุ
-        </p>
-
-        <h2>ติดตามได้ที่</h2>
-
-        <ul>
-            <li>
-                <a href="https://www.facebook.com/nomikonolife" target="_blank">
-                    Facebook Page
+        <section class="section start-section" aria-labelledby="start-title">
+            <div class="section-title">
+                <h2 id="start-title"><span aria-hidden="true">♧</span> เริ่มต้นที่นี่</h2>
+                <p>หมวดหมู่หลักของคลังข้อมูล</p>
+            </div>
+            <div class="start-grid">
+                <a class="start-card violet" href="archive.html?category=Visual%20Novel">
+                    <div class="start-icon" aria-hidden="true">🎮</div>
+                    <h3>Visual Novel</h3>
+                    <strong>400+</strong>
+                    <p>รวมบทความเกี่ยวกับ Visual Novel, Galgame และงานเล่าเรื่องญี่ปุ่น</p>
                 </a>
-            </li>
-        </ul>
-    </div>
+                <a class="start-card pink" href="archive.html?category=Music">
+                    <div class="start-icon" aria-hidden="true">♪</div>
+                    <h3>แปลเพลงให้แนวฟัง</h3>
+                    <strong>89+</strong>
+                    <p>มุมแปลเพลงญี่ปุ่นและเพลงเกม ทั้งเก่าและใหม่</p>
+                </a>
+                <a class="start-card blue" href="archive.html?category=Diary">
+                    <div class="start-icon" aria-hidden="true">▥</div>
+                    <h3>Galgame Diary</h3>
+                    <strong>411+</strong>
+                    <p>บันทึกเรื่องราวและประวัติส่วนตัวของเกมที่น่าสนใจ</p>
+                </a>
+                <a class="start-card cyan" href="archive.html?category=Interview">
+                    <div class="start-icon" aria-hidden="true">✎</div>
+                    <h3>บทสัมภาษณ์นักวาด</h3>
+                    <p>รวมบทสัมภาษณ์นักวาด นักเขียน นักพากย์ และผู้สร้างสรรค์ผลงาน</p>
+                </a>
+                <a class="start-card gold" href="archive.html?category=History">
+                    <div class="start-icon" aria-hidden="true">▣</div>
+                    <h3>ประวัติศาสตร์ค่ายเกม</h3>
+                    <p>ข้อมูลประวัติค่ายเกม ผู้พัฒนา และเหตุการณ์สำคัญในวงการ</p>
+                </a>
+                <a class="start-card red" href="archive.html?category=Miko">
+                    <div class="start-icon" aria-hidden="true">⛩</div>
+                    <h3>มิโกะในโลกเกมญี่ปุ่น</h3>
+                    <p>เรื่องราวของมิโกะ ความเชื่อ วัฒนธรรม และการปรากฏในเกม</p>
+                </a>
+            </div>
+        </section>
 
-    <footer>
-        © 2026 No MiKo No Life V2
+        <section class="section" aria-labelledby="highlight-title">
+            <div class="section-title">
+                <h2 id="highlight-title"><span aria-hidden="true">★</span> ไฮไลต์แนะนำ</h2>
+                <p>บทความและข้อมูลที่น่าสนใจ</p>
+            </div>
+            <div id="highlight-grid" class="highlight-grid"></div>
+        </section>
+
+        <section class="section" aria-labelledby="category-title">
+            <div class="section-title">
+                <h2 id="category-title">เลือกดูตามหมวดหมู่</h2>
+                <p>Browse by Category</p>
+            </div>
+            <div class="category-grid">
+                <a href="archive.html?category=Visual%20Novel"><span>▧</span><strong>Visual Novel</strong><small>บทความหลัก</small></a>
+                <a href="archive.html?category=History"><span>▣</span><strong>History</strong><small>ประวัติ / ค่ายเกม</small></a>
+                <a href="archive.html?category=Music"><span>♪</span><strong>Music</strong><small>เพลง / แปลเพลง</small></a>
+                <a href="archive.html?category=Translation"><span>⟐</span><strong>Translation</strong><small>แปลไทย</small></a>
+                <a href="archive.html?category=Interview"><span>♟</span><strong>Interview</strong><small>บทสัมภาษณ์</small></a>
+                <a href="archive.html?category=Diary"><span>♜</span><strong>Diary</strong><small>บันทึกส่วนตัว</small></a>
+                <a href="archive.html?category=Miko"><span>⛩</span><strong>Miko</strong><small>มิโกะ / ความเชื่อ</small></a>
+                <a href="archive.html?category=PC-98%20%2F%20Retro"><span>▱</span><strong>PC-98 / Retro</strong><small>ยุคเก่า / พีซี 98</small></a>
+                <a href="archive.html"><span>▦</span><strong>All Catalog</strong><small>ดูทั้งหมด</small></a>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="tags-title">
+            <div class="section-title">
+                <h2 id="tags-title">แท็กยอดนิยม</h2>
+                <p>Popular Tags</p>
+            </div>
+            <div class="tag-cloud" aria-label="แท็กยอดนิยม">
+                <button type="button">PC98</button>
+                <button type="button">16bit</button>
+                <button type="button">Leaf</button>
+                <button type="button">Key</button>
+                <button type="button">AliceSoft</button>
+                <button type="button">Elf</button>
+                <button type="button">Type-Moon</button>
+                <button type="button">Miko</button>
+                <button type="button">Music</button>
+                <button type="button">Translation</button>
+                <button type="button">Interview</button>
+                <button type="button">Eroge</button>
+                <button type="button">Visual Novel</button>
+                <button type="button">Retro</button>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="latest-title">
+            <div class="section-title with-link">
+                <div>
+                    <h2 id="latest-title">อัปเดตล่าสุด</h2>
+                    <p>Latest Updates</p>
+                </div>
+                <a href="archive.html">ดูทั้งหมด →</a>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ชื่อเรื่อง</th>
+                            <th>หมวดหมู่</th>
+                            <th>แท็ก</th>
+                            <th>วันที่</th>
+                            <th>ลิงก์</th>
+                        </tr>
+                    </thead>
+                    <tbody id="latest-updates-body"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <a class="footer-brand" href="index.html"><span aria-hidden="true">⛩</span> No MiKo No Life</a>
+            <p>คลังข้อมูล Visual Novel และวัฒนธรรมเกมญี่ปุ่น เพื่อคนที่รักในเรื่องราวและความทรงจำ</p>
+        </div>
+        <div>
+            <h3>ลิงก์ด่วน</h3>
+            <a href="archive.html">Catalog</a>
+            <a href="archive.html?category=Diary">Diary</a>
+            <a href="archive.html?category=Translation">Translate</a>
+            <a href="archive.html?category=Interview">Interview</a>
+            <a href="archive.html?category=History">History</a>
+        </div>
+        <div>
+            <h3>เกี่ยวกับเรา</h3>
+            <a href="about.html">About</a>
+            <a href="archive.html">Archive</a>
+            <a href="#">Note &amp; Credit</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div>
+            <h3>ติดตามเรา</h3>
+            <a href="https://www.facebook.com/nomikonolife">Facebook</a>
+            <a href="#">YouTube</a>
+            <a href="#">Blog</a>
+            <a href="#">RSS Feed</a>
+        </div>
+        <p class="copyright">© 2026 No MiKo No Life. All rights reserved.</p>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
-
 </html>
